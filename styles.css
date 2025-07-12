@@ -1,0 +1,165 @@
+body{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: rgb(186, 216, 243);
+     width: 100%;
+     height: 100vh;
+     display: grid;
+     grid-template-columns: 25% 75%;
+     place-items: center; 
+     margin: 0;
+     padding: 0;
+}
+.form{
+     width: 80%;
+     height: 20px;
+     padding: 10px;
+     margin-top: 20px;
+     margin-left: 15px;
+     margin-right: 15px;
+     border-radius: 10px;
+}
+
+.submitbtn{
+     margin-top: 20px;
+     margin-left: 80px;
+      background-color: rgb(111, 182, 245);
+     width: 150px;
+     height: 40px;
+     border-radius: 10px;
+     padding: 5px;
+     font-weight: bold;
+}
+
+.bookform-container{
+     display: none;
+     background-color: rgb(111, 182, 245);
+     width: 300px;
+     height: 50vh;
+     border-radius: 10px;
+}
+.readbox{
+  transform: scale(2);
+  margin-top: 15px;
+  transform-origin: center; 
+}
+
+.checkboxCtn{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 5px;        
+     width: 100%;
+     height: 30px;
+     margin-bottom: 40px;
+}
+.bookform{
+     display: flex;
+     flex-direction: column;
+     gap: 10px; 
+     padding: 20px;
+     align-items: center;
+     border-radius: 10px;
+}
+
+.readlabel{
+     position: absolute;
+     top:80%;
+}
+
+                
+
+#newBook{
+     background-color: rgb(111, 182, 245);
+     width: 150px;
+     height: 40px;
+     border-radius: 10px;
+     padding: 5px;
+     font-weight: bold;
+}
+
+
+
+.book-cards {
+  width: 220px;
+  background-color: rgb(111, 182, 245);
+  border-radius: 10px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  word-wrap: break-word;
+  text-align: left;
+}
+.book-cards h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.book-cards p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+.grid1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.grid2 {
+  width: 75%;
+  height: 100vh;
+  overflow-y: auto; 
+  box-sizing: border-box;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 20px;            
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+    place-items: center;
+    padding: 20px;
+  }
+
+  .grid1, .grid2 {
+    width: 100%;
+  }
+
+  .bookform-container {
+    width: 90%;
+    height: auto;
+    place-items: center;
+  }
+
+  .submitbtn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .cards-grid {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .book-cards {
+    width: 90%;
+  }
+}

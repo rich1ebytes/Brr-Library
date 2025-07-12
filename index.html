@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css"> 
+     <title>Brr Library!</title>
+     <link rel="icon" href="title.png">
+</head>
+<body>
+     <div class="grid1">
+          <button id="newBook">
+          New Book
+          </button>
+
+          <div id="addform" class="bookform-container">
+          <form id="bookform">
+               <input type="text" placeholder="Book Name" class="form" id="bookname" required>
+               <input type="text" placeholder="Author" class="form"id="author" required>
+               <input type="number" placeholder="Pages" class="form"id="pages" required>
+               
+               <div class="checkboxCtn">
+               <input type="checkbox" class="readbox"id="read">
+               <label class="readlabel" for="read"><h3>read the book?</h3></label>
+               </div>
+
+               <button id="submitbtn" class="submitbtn"type="submit">Save Book</button>
+          </form>
+          </div>
+
+     </div>
+     <div class="grid2">
+     <div class="cards-grid" id="cards">
+
+     </div>
+     </div>
+
+
+     <script src="index.js"></script>
+</body>
+</html>
